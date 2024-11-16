@@ -1,0 +1,12 @@
+@import "../../styles/colors";
+
+.user-avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  background-color: $accent-color;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,48 @@
+@import "../../styles/colors";
+
+.selected-email {
+  width: 60%;
+  height: 80vh;
+  border: 1px solid $border-color;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2em calc(2em + 1rem) 2em 2em;
+  margin-bottom: 1.5em;
+  display: flex;
+  gap: 1rem;
+  .selected-email__content {
+    width: 100%;
+    .selected-email__content-date {
+      margin-top: 1em;
+    }
+    .selected-email__content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .selected-email__content-body {
+      overflow-y: scroll;
+      height: 60vh;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      line-height: 1.5rem;
+      font-size: 14px;
+    }
+    .favorite-button {
+      border: none;
+      display: grid;
+      height: 30px;
+      font-size: 12px;
+      padding: 0px 14px;
+      color: white;
+      place-items: center;
+      border-radius: 20px;
+      background-color: $accent-color;
+      cursor: pointer;
+    }
+    .favorite {
+      background-color: #f1d5db;
+      color: black;
+    }
+  }
+}

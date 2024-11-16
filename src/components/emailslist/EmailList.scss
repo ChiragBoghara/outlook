@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+
+.emails {
+  display: flex;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  .all-emails {
+    width: 40%;
+    height: calc(100vh - 5vh - 3.5rem);
+    overflow-y: scroll;
+    padding-right: 1em;
+  }
+  .all-emails::-webkit-scrollbar {
+    display: none;
+  }
+  main::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .all-emails,
+  main {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .full-width{
+    width: 100%;
+  }
+}

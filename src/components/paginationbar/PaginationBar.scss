@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+
+.pagination-bar {
+  display: flex;
+  gap: 1em;
+  .pagination-bar__box {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .pagination-bar__prev,
+  .pagination-bar__next {
+    cursor: pointer;
+    border: 0;
+  }
+  .disabled {
+    cursor: not-allowed;
+    color: rgb(180, 180, 180);
+  }
+}

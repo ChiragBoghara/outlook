@@ -1,0 +1,25 @@
+@import "../../styles/colors";
+
+section {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  height: 5vh;
+
+  ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    li {
+      margin-left: 2.5rem;
+      padding: .3em 1em;
+      cursor: pointer;
+    }
+    .selected{
+      border: 1px solid $border-color;
+      border-radius: 20px;
+      background-color: $filter-button-color;
+    }
+  }
+}

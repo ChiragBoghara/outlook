@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+
+.email-card {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid $border-color;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  .email-card__info {
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    .email-card__description,
+    .email-card__date {
+      font-size: 0.95rem;
+    }
+  }
+  .email-card__bold {
+    font-weight: bold;
+  }
+}
+
+.selected{
+  border: 2px solid $accent-color;
+}
+
+.read{
+  background-color: $read-background-color;
+}
